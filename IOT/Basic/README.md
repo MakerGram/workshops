@@ -3,8 +3,9 @@
 
 In this workshop we will implimnet very basic connected products.  we have now two session
 
-1. [Internet Conneted Lights  (NodeRED & MQTT)](Internetconnectd_light_nodered/Internetconnectd_light_nodered.md)
-2. [Internet Connected Thromostat (DHT11 & Ubidots)]() 
+1. [Control lights with voice](Voicecontrolled_light_adafruitio/README.md)
+2. [Internet Conneted Lights  (NodeRED & MQTT)](Internetconnectd_light_nodered/README.md)
+3. Internet Connected Thromostat (DHT11 & Ubidots)
 
 ### Hardware Requirment 
 

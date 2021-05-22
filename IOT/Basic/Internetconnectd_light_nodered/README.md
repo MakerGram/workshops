@@ -37,6 +37,8 @@ Open Arduino IDE and add additional Board URL File => Preference (Ctrl + Comma)
 
 ![](src/img/001.jpg)
 
+In Additional Boards Manager, click add and paste the URL there http://arduino.esp8266.com/stable/package_esp8266com_index.json And click "OK".
+
 
 
 
