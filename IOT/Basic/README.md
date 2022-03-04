@@ -5,7 +5,7 @@ In this workshop we will implimnet very basic connected products.  we have now t
 
 
 
-1. [Internet Connected Light 💡 ]()
+1. [Internet Connected Light 💡 ](ConnectedLight/readme.md)
 
 2. [Control Lights With Coice bar 🎤](Voicecontrolled_light_adafruitio/README.md)
 
