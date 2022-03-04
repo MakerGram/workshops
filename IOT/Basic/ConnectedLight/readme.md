@@ -62,7 +62,50 @@ You can install the library through the Arduino Library Manager (click: Sketch -
 )
 
 
-## Step 4: Code
+## Step 4: Setup Adafrui.io 
+
+## 2. Setup Adafruit.io - Cloud 
+
+We are using [Adafruit.io](https://io.adafruit.com) as the MQTT Broker and it's also have dashboard with lot of widgets  .So first you need to create an account if you did't have one [Adafruit.io](https://io.adafruit.com) or login with your credentials. 
+
+![adafruit](../Voicecontrolled_light_adafruitio/img/008.png)
+
+after login , create MQTT feed by clicking **Feeds** on the left menu bar and Click `create a New Feed` under the `Actions` bar .
+
+![adafruit](../Voicecontrolled_light_adafruitio/img/009.png)
+
+In the following window give a name for our new Feed , like **onoff** and click create. next we need to setup a dashboard for UI control , for that click **Dashboard** on the left menu bar and clikc `create a New Dashboard` under `bar`.
+
+![adafruit](../Voicecontrolled_light_adafruitio/img/010.png)
+
+give a name to our new dashboard , I just put **Switch** . 
+
+![adafruit](../Voicecontrolled_light_adafruitio/img/011.png)
+
+Now we can see the dashbord listed under the dashboard menu .
+
+![adafruit](../Voicecontrolled_light_adafruitio/img/012.png)
+
+for editing the dashboard , select the dashboard by check the check box and click `create a new block` on top right menu .and the following window select the **Toggle** .
+
+![adafruit](../Voicecontrolled_light_adafruitio/img/013.png)
+
+on the next step select the right Group/Feed and clikc `Next setp`.
+
+![adafruit](../Voicecontrolled_light_adafruitio/img/014.png)
+
+next we setup the `Block` , just leave as default and click `Create block`
+
+![adafruit](../Voicecontrolled_light_adafruitio/img/015.png)
+
+and We are done with the cloud part , our dashbord will look like this .
+
+![adafruit](../Voicecontrolled_light_adafruitio/img/016.png)
+
+
+
+
+## Step 5: Code
 
 
 ```
@@ -196,7 +239,7 @@ void MQTT_connect()
 ```
 
 
-## Step 5: Upload 
+## Step 6: Upload 
 
 Before uploding the code we need to change some parameters , like wifi config,mqtt credentials ..
 
@@ -224,7 +267,7 @@ after uplaoding the code open your serial monitor (9600 buad rate) so we can see
 ![serialmonitor](../Voicecontrolled_light_adafruitio/img/019.png)
 
 
-## 4. Control Light From Any Where in The World ✨
+## Step Final. Control Light From Any Where in The World ✨
 
 After the sketch uploading everything is fine we can now test the adafruit cloud dashboard .
 
