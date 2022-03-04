@@ -9,12 +9,15 @@ In this workshop we will implimnet very basic connected products.  we have now t
 
 ### Hardware Requirment 
 
-* 1 x ESP8266 NodeMCU
+* 1 x ESP32 Dev Kit 
 * 3 x LED 
 * 5 x 100 ohms Resistor
-* 1 x Push Button
+* 1 x LDR
 * 1 x DHT Sensor 
-* 1 x Local server setup - Raspberry Pi 
+* 1 X Jumper Cable
+* 1 X Email ID 
+* 1 x Laptop with internet connection
+* Few Jumper canles   
 
 
 
