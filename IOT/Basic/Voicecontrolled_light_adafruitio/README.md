@@ -8,7 +8,7 @@ For regarding any queries please use [makergram.com](https://community.makergram
 
 - Laptop
 - Arduino IDE 
-- NodeMCU
+- ESP32
 - LED
 - USB micro to Mini Cable
 - Internet Connectivity 
@@ -22,49 +22,41 @@ For regarding any queries please use [makergram.com](https://community.makergram
 
 ![Diagram](img/Diagram.png)
 
-## Step 1. Setup Arduino IDE
+## Step 1 : Install Arduino IDE
 
-You can download and Install Arduino IDE from here [Arduino IDE](https://www.arduino.cc/en/Main/Software)
-In default Arduino IDE only Support Native boards like UNO,Nano.. etc , so we need to install NodeMCU Board  and MQTT Libraries .
+We are using arduino IDE to upload code in ESP32. Goto https://www.arduino.cc/en/software and downalod Arduino IDE. 
 
- **NodeMCU Board Definition**
+## Step 2: Install ESP32 on Arduino IDE
 
-Open Arduino IDE and add additional Board URL ` File => Preference (Ctrl + Comma) `
+Since ESP32 is third party dev kit, we need to install on esp32 to compile code. 
 
-![additional Board URL File](img/001.jpg)
+*  Add Board URL 
+
+Open Arduino **Preferences Window**
+
+![](/IOT/Basic/ConnectedLight/src/install_guide_preferences.png) 
+
+* Enter one of the release links above into Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
+
+```
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+```
+
+![](/IOT/Basic/ConnectedLight/src/install_guide_boards_manager_url.png) 
+
+* Open Boards Manager from Tools > Board menu and install esp32 platform (and do not forget to select your ESP32 board from Tools > Board menu after installation).
+
+![](/IOT/Basic/ConnectedLight/src/install_guide_boards_manager_esp32.png)
+
+* Restart Arduino IDE.
 
 
-In Additional Boards Manager, click add and paste the URL there ` http://arduino.esp8266.com/stable/package_esp8266com_index.json `
-And click "OK".
+## Step 3: Install Adafruit.io Libraries
 
-![nodemcu](img/002.jpg)
+You can install the library through the Arduino Library Manager (click: Sketch -> Include Library -> Manage Libraries...)
 
-![nodemcu](img/003.jpg)
-
-
-**Download Board Definitions**
-
-Open Board Manager by going to ` Tools => Board => Boards Manger `
-
-![nodemcu](img/004.jpg)
-
-Open Boards Manager and search for NodeMCU:
-
-![nodemcu](img/005.jpg)
-
-`Note: It only appears if you set the NodeMCU Board URL (1.1)`
-
-**Download MQTT library**
-
-For MQTT we are using Adafruit.io broker and for that we need to install Adafruit MQTT library . `Sketch => Include library => Manage Libraries`
-
-![mqtt](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/006.jfif)
-
-In the following window type `mqtt` and just wait a sec , it will load mqtt related lib .
-
-![mqtt](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/007.JPG)
-
-Now we can see the Adafruit MQTT Lib on the Third one , select the latest verison and click install . that's all.
+![](/IOT/Basic/ConnectedLight/src/adafruit_io_arduino_library_manager.png
+)
 
 ## 2. Setup Adafruit.io - Cloud 
 
@@ -318,14 +310,14 @@ next we need to set Say a simple phrase , `This trigger fires when you say “Ok
 
 next select the ***that***
 
-![IFTTT](mg/026.png)
+![IFTTT](img/026.png)
 
  we need select a ***Choose action service*** , we choosed Adafruit service
 
 ![IFTTT](img/027.png)
 
 
-![IFTTT](mg/028.png)
+![IFTTT](img/028.png)
 
 so next we need Complete action fields by gaving the Feed name and Data to save
 
