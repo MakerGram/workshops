@@ -3,6 +3,9 @@
 Avilable Workshops
 
 * [Basic IoT Workshop Content](IOT/Basic/README.md)
-    1. [Control lights with voice](IOT/Basic/Voicecontrolled_light_adafruitio/README.md)
-    2. [Internet Conneted Lights  (NodeRED & MQTT)](IOT/Basic/Internetconnectd_light_nodered/README.md)
-    3. Internet Connected Thromostat (DHT11 & Ubidots) 
+    
+    1. [Internet Connected Light 💡 ](ConnectedLight/readme.md)
+    
+    2. [Control Lights With Coice bar 🎤](Voicecontrolled_light_adafruitio/README.md)
+    
+    3. [Internet conneted thermostat ⌚]()
