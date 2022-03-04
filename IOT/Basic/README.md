@@ -3,9 +3,13 @@
 
 In this workshop we will implimnet very basic connected products.  we have now two session
 
-1. [Control lights with voice](Voicecontrolled_light_adafruitio/README.md)
-2. [Internet Conneted Lights  (NodeRED & MQTT)](Internetconnectd_light_nodered/README.md)
-3. Internet Connected Thromostat (DHT11 & Ubidots)
+
+
+1. [Internet Connected Light 💡 ]()
+
+2. [Control Lights With Coice bar 🎤](Voicecontrolled_light_adafruitio/README.md)
+
+3. [Internet conneted thermostat ⌚]()
 
 ### Hardware Requirment 
 
