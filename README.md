@@ -5,11 +5,11 @@ In this workshop we will implimnet very basic connected products.  we have now t
 
 
 
-1. [Internet Connected Light 💡 ](ConnectedLight/readme.md)
+1. [Internet Connected Light 💡 ](/IOT/Basic/ConnectedLight/readme.md)
 
-2. [Control Lights With Voice 🎤](Voicecontrolled_light_adafruitio/README.md)
+2. [Control Lights With Voice 🎤](/IOT/Basic/Voicecontrolled_light_adafruitio/README.md)
 
-3. [Internet conneted thermostat ⌚](IOTthermostat/README.md)
+3. [Internet conneted thermostat ⌚](/IOT/Basic/IOTthermostat/README.md)
 
 ### Hardware Requirment 
 
