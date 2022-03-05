@@ -56,15 +56,25 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ## Step 3: Install Adafruit.io Libraries
 
+Install adafruit MQTT library and Adafruit.Io library. 
+
 You can install the library through the Arduino Library Manager (click: Sketch -> Include Library -> Manage Libraries...)
+
+#### Adafruit MQTT Libarary
+
+![](/IOT/Basic/ConnectedLight/src/mqttlib.png)
+
+
+#### Adafruit.i0 Libarary
 
 ![](/IOT/Basic/ConnectedLight/src/adafruit_io_arduino_library_manager.png
 )
 
 
-## Step 4: Setup Adafrui.io 
 
-## 2. Setup Adafruit.io - Cloud 
+
+
+## Step 4: Setup Adafrui.io 
 
 We are using [Adafruit.io](https://io.adafruit.com) as the MQTT Broker and it's also have dashboard with lot of widgets  .So first you need to create an account if you did't have one [Adafruit.io](https://io.adafruit.com) or login with your credentials. 
 
@@ -279,3 +289,6 @@ we can simply control the LED that connected to the ESP32 by Toggle the Digital 
 
 
 
+## Thank You.
+
+For regarding any queries please use [makergram.com](https://community.makergram.com/)
