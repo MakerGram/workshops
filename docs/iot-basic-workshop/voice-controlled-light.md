@@ -1,4 +1,8 @@
-# Voice Controlled Light
+---
+sidebar_position: 2
+---
+
+# Voice Controlled Light 🗣️💡
 
 In this workshop we will learn about how to control things using your voice, for this we are using Google Assistant as Interface and NodeMCU as Controller and Adafruit.io as Cloud, The NodeMCU is an opensource development board using esp8266.  and this is step by step guide complete the workshop. 
 
@@ -20,7 +24,7 @@ For regarding any queries please use [makergram.com](https://community.makergram
 
 ## Architecture
 
-![Diagram](img/Diagram.png)
+![Diagram](img/voicecontrolled/Diagram.png)
 
 ## Step 1. Setup Arduino IDE
 
@@ -31,26 +35,26 @@ In default Arduino IDE only Support Native boards like UNO,Nano.. etc , so we ne
 
 Open Arduino IDE and add additional Board URL ` File => Preference (Ctrl + Comma) `
 
-![additional Board URL File](img/001.jpg)
+![additional Board URL File](img/voicecontrolled/001.jpg)
 
 
 In Additional Boards Manager, click add and paste the URL there ` http://arduino.esp8266.com/stable/package_esp8266com_index.json `
 And click "OK".
 
-![nodemcu](img/002.jpg)
+![nodemcu](img/voicecontrolled/002.jpg)
 
-![nodemcu](img/003.jpg)
+![nodemcu](img/voicecontrolled/003.jpg)
 
 
 **Download Board Definitions**
 
 Open Board Manager by going to ` Tools => Board => Boards Manger `
 
-![nodemcu](img/004.jpg)
+![nodemcu](img/voicecontrolled/004.jpg)
 
 Open Boards Manager and search for NodeMCU:
 
-![nodemcu](img/005.jpg)
+![nodemcu](img/voicecontrolled/005.jpg)
 
 `Note: It only appears if you set the NodeMCU Board URL (1.1)`
 
@@ -70,39 +74,39 @@ Now we can see the Adafruit MQTT Lib on the Third one , select the latest veriso
 
 We are using [Adafruit.io](https://io.adafruit.com) as the MQTT Broker and it's also have dashboard with lot of widgets  .So first you need to create an account if you did't have one [Adafruit.io](https://io.adafruit.com) or login with your credentials. 
 
-![adafruit](img/008.png)
+![adafruit](img/voicecontrolled/008.png)
 
 after login , create MQTT feed by clicking **Feeds** on the left menu bar and Click `create a New Feed` under the `Actions` bar .
 
-![adafruit](img/009.png)
+![adafruit](img/voicecontrolled/009.png)
 
 In the following window give a name for our new Feed , like **onoff** and click create. next we need to setup a dashboard for UI control , for that click **Dashboard** on the left menu bar and clikc `create a New Dashboard` under `bar`.
 
-![adafruit](img/010.png)
+![adafruit](img/voicecontrolled/010.png)
 
 give a name to our new dashboard , I just put **Switch** . 
 
-![adafruit](img/011.png)
+![adafruit](img/voicecontrolled/011.png)
 
 Now we can see the dashbord listed under the dashboard menu .
 
-![adafruit](img/012.png)
+![adafruit](img/voicecontrolled/012.png)
 
 for editing the dashboard , select the dashboard by check the check box and click `create a new block` on top right menu .and the following window select the **Toggle** .
 
-![adafruit](img/013.png)
+![adafruit](img/voicecontrolled/013.png)
 
 on the next step select the right Group/Feed and clikc `Next setp`.
 
-![adafruit](img/014.png)
+![adafruit](img/voicecontrolled/014.png)
 
 next we setup the `Block` , just leave as default and click `Create block`
 
-![adafruit](img/015.png)
+![adafruit](img/voicecontrolled/015.png)
 
 and We are done with the cloud part , our dashbord will look like this .
 
-![adafruit](img/016.png)
+![adafruit](img/voicecontrolled/016.png)
 
 
 ## 3.Programming 
@@ -111,7 +115,7 @@ Next upload the code , for that we need set target board in the Arduino IDE.
 
 `Tools => Board => NodeMCU ESP-12E`
 
-![nodemcu](img/017.jfif)
+![nodemcu](img/voicecontrolled/017.jfif)
 
 Select Port in same menu (in my case, I have Port-3).
 
@@ -269,21 +273,21 @@ Replace the WiFi Name with your WiFi SSID name Password
 ```
  In this code block re-place the MQTT_NAME with your Adafruit.io User name , and MQTT_PASS with AIO Key .
 
-![adafruitio](img/018.png)
+![adafruitio](img/voicecontrolled/018.png)
 
 
 after uplaoding the code open your serial monitor (9600 buad rate) so we can see some usefull messages ,
 
-![serialmonitor](img/019.png)
+![serialmonitor](img/voicecontrolled/019.png)
 
 
 ## 4. Testing Adafruit.io 
 
 After the sketch uploading everything is fine we can now test the adafruit cloud dashboard .
 
-![serialmonitor](img/020.png)
+![serialmonitor](img/voicecontrolled/020.png)
 
-![serialmonitor](img/021.png)
+![serialmonitor](img/voicecontrolled/021.png)
 
 we can simply control the LED that connected to the NodeMCU by Toggle the Digital Switch . Yes , we just did some intenet connected Devices . we can now control the light anywhere in the world .
 
@@ -301,39 +305,39 @@ now we are just connected the our hardware module to the internet and we can now
  first we need to create an account [IFTTT](https://ifttt.com/).and click ***New Applet***
 
 
-![IFTTT](img/022.png)
+![IFTTT](img/voicecontrolled/022.png)
 
 Click ***this*** button and select the google assistant from the service .
 
-![IFTTT](img/023.png)
+![IFTTT](img/voicecontrolled/023.png)
 
 next choose a trigger from the listed items , for our application I used ***Say a simple phrase***
 
 
-![IFTTT](img/024.png)
+![IFTTT](img/voicecontrolled/024.png)
 
 next we need to set Say a simple phrase , `This trigger fires when you say “Ok Google” to the Google Assistant followed by a phrase you choose. For example, say “Ok Google, I’m running late” to text a family member that you’re on your way home.`
 
-![IFTTT](img/025.png)
+![IFTTT](img/voicecontrolled/025.png)
 
 next select the ***that***
 
-![IFTTT](mg/026.png)
+![IFTTT](img/voicecontrolled/026.png)
 
  we need select a ***Choose action service*** , we choosed Adafruit service
 
-![IFTTT](img/027.png)
+![IFTTT](img/voicecontrolled/027.png)
 
 
-![IFTTT](mg/028.png)
+![IFTTT](img/voicecontrolled/028.png)
 
 so next we need Complete action fields by gaving the Feed name and Data to save
 
-![IFTTT](img/029.png)
+![IFTTT](img/voicecontrolled/029.png)
 
 we completed the work and as last step we need to proceeds ***Review and finish***
 
-![IFTTT](img/030.png)
+![IFTTT](img/voicecontrolled/030.png)
 
 and we need to the same IFTTT Applet for Turn Off the Light .after that use your  Google Assistant in your mobile phone to control devices
 

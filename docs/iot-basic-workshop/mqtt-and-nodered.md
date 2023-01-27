@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Internet Conneted Lights  (NodeRED & MQTT) 💡
 
 In this workshop we will going learn build a **Internet Conncted Lights** with the help of NodeRED and MQTT. 
@@ -18,14 +22,12 @@ In this workshop we will going learn build a **Internet Conncted Lights** with t
 
 ## Architecture
 
-![Architecture](src/img/architecture.png)
+![Architecture](img/mqtt/img/architecture.png)
 
-
-<hr>
 
 ## Step 1 : Connect NodeMCU and LED's
 
-![](src/img/led_connection_bb.png)
+![](img/mqtt/img/led_connection_bb.png)
 
 ## Step 2: Install Arduino IDE and Add NodeMCU. 
 
@@ -35,7 +37,7 @@ You can download and Install Arduino IDE from here [Arduino IDE](https://www.ard
 
 Open Arduino IDE and add additional Board URL File => Preference (Ctrl + Comma)
 
-![](src/img/001.jpg)
+![](img/mqtt/img/001.jpg)
 
 In Additional Boards Manager, click add and paste the URL there http://arduino.esp8266.com/stable/package_esp8266com_index.json And click "OK".
 
