@@ -98,8 +98,13 @@ const config = {
             items: [
               {
                 label: 'IoT',
-                to: '/category/iot-basic-workshop-',
+                to: 'docs/category/iot-basic-workshop-',
               },
+              {
+                label: 'tinyML',
+                to: 'docs/category/tinyml-workshop-',
+              },
+
             ],
           },
           {
