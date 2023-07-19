@@ -76,7 +76,13 @@ const config = {
             position: 'left',
             label: 'IoT 💡',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'doc',
+            docId: '/category/tinyml-workshop-',
+            position: 'left',
+            label: 'tinyML 🧠',
+          },
+          // {to: '/category/tinyml-workshop-', label: 'tinyML 🧠', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
