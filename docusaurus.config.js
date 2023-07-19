@@ -138,7 +138,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} MakerGram, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} MakerGram. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
