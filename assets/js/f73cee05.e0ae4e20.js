@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkworkshop=self.webpackChunkworkshop||[]).push([[4034],{6991:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/workshop.makergram.com/blog/tags/hola","allTagsPath":"/workshop.makergram.com/blog/tags","count":1}')}}]);
