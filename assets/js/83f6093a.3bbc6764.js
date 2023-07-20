@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkworkshop=self.webpackChunkworkshop||[]).push([[3915],{9756:o=>{o.exports=JSON.parse('{"permalink":"/workshop.makergram.com/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
