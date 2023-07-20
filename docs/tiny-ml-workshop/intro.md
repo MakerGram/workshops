@@ -10,7 +10,7 @@ Welcome to tinyML Workshop, In here we will look into basic of tinyML and how to
 
 Machine learning (ML) is a way of writing computer programs. Specifically, it’s a way of writing programs that process raw data and turn it into information that is meaningful at an application level.
 
-![](../../docs/tiny-ml-workshop/img/AI-vs-ML-vs-Deep-Learning.png) (📷src:edureka.co)
+![](../../docs/tiny-ml-workshop/img/what-is-edge-machine-learning.webp) (📷src:edgeimpulse)
 
 
 For example, one ML program might be designed to determine when an industrial machine has broken down based on readings from its various sensors, so that it can alert the operator. Another ML program might take raw audio data from a microphone and determine if a word has been spoken, so it can activate a smart home device.
