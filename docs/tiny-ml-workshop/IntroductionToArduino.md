@@ -63,8 +63,7 @@ In addition to the classic Arduino boards like Arduino Uno and Arduino Mega, the
 # ToDo
 
  - [ ] Install Arduino IDE v2.1.1 in your computer from here https://www.arduino.cc/en/software 
- - [ ] Complile any sample sketch/program without any error. 
- 
+ - [ ] Complile any sample sketch/program without any error.
 
 
 
