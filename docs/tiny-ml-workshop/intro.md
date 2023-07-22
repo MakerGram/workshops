@@ -59,7 +59,7 @@ The machine learning model be created and training will be done with the help of
 
 In the following sessions, we will learn about every steps involved in tht tinyML model creation and running, Please stay tuned!
 
-
+TinyML Presenation: https://docs.google.com/presentation/d/1clxF8B306UgnjVS2aljbQabAG5CAUAdYL29QNriRk3w/edit?usp=sharing 
 
 # ToDo
 
