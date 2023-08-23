@@ -82,6 +82,13 @@ const config = {
             position: 'left',
             label: 'tinyML 🧠',
           },
+          {
+            type: 'doc',
+            docId: '/category/projects-',
+            position: 'left',
+            label: 'Projects 📝',
+          },
+          
           // {to: '/category/tinyml-workshop-', label: 'tinyML 🧠', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
