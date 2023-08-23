@@ -121,21 +121,21 @@ void loop()
     }
 
     // print the predictions
-   // ei_printf("Predictions ");
-   // ei_printf("(DSP: %d ms., Classification: %d ms., Anomaly: %d ms.)",
-   // result.timing.dsp, result.timing.classification, result.timing.anomaly);
-    //ei_printf("\n");
+   ei_printf("Predictions ");
+   ei_printf("(DSP: %d ms., Classification: %d ms., Anomaly: %d ms.)",
+   result.timing.dsp, result.timing.classification, result.timing.anomaly);
+    ei_printf("\n");
     for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
-   // ei_printf("    %s: %.5f\n", result.classification[ix].label, result.classification[ix].value);
+   ei_printf("    %s: %.5f\n", result.classification[ix].label, result.classification[ix].value);
     if (result.classification[ix].value > .5) {
         ei_printf("%s \n", result.classification[ix]);
     }
     }
-
-    //  if (result.classification[ix].value > .5) {
-    //     ei_printf("    %s: %.5f\n", result.classification[ix].label, result.classification[ix].value);
-    // }
-    // }
+ 
+     if (result.classification[ix].value > .5) {
+        ei_printf("    %s: %.5f\n", result.classification[ix].label, result.classification[ix].value);
+    }
+    }
 
 
 #if EI_CLASSIFIER_HAS_ANOMALY == 1
