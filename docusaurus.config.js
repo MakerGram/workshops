@@ -32,6 +32,13 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      "@gracefullight/docusaurus-plugin-microsoft-clarity",
+      { projectId: "iqas9jl96z" },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -152,15 +159,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-};
-
-module.exports = {
-  plugins: [
-    [
-      "@gracefullight/docusaurus-plugin-microsoft-clarity",
-      { projectId: "iqas9jl96z" },
-    ],
-  ],
 };
 
 module.exports = config;
