@@ -525,7 +525,7 @@ Now you can see the your body action inferencing by the tinyML model running on 
 ### Thanks to our friends from Blueswirless, SeeedStudio , MakerGram, EdegeImpulse, Hackter.io to make the event happen, and thanks to our Fab23 team. 
 
 
-![](../tiny-ml-workshop/img/Sponcers.jpg)
+![](../tiny-ml-workshop/img/support_updates.png)
 
 
 
