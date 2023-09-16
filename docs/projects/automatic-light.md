@@ -112,7 +112,7 @@ Now, you got an idea about how arduino works. Let's built the Smart Light, befor
 
 In and LDR, it's only passes current when it's hit's light on the surface in technic the resistance will reduce when light hit's. For the smartlight, we are trying to use the technique to control our main light. 
 
-### Step 3.1 Connection Digram 
+### Step 3.1 Connection Diagram 
 Connect the LDR and Arduino as mentioned below 
 
 |LDR Pin| Arduino Pin|
