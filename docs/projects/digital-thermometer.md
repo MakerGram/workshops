@@ -105,7 +105,7 @@ We can see the LED is blnking. (You don't need to attach a LED like the below im
 ![](https://i.makeagif.com/media/8-05-2014/I8Mlj2.gif)
 
 
-## Step 3: Digital Scale Build 🛠️
+## Step 3: Digital Thermometer  Build 🛠️
 
 Now, you got an idea about how arduino works. Let's built the digital scale one by one. First, we are going to test the sensor and then display the data on the LCD display. 
 
