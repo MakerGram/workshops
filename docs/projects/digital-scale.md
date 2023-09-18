@@ -120,7 +120,7 @@ In Ultrasonic module, transmitter part will send a ultarasonic signal and when i
 After that, we will display the distance on a LCD display for protability. 
 
 ### 3.2 Connection Diagram 
-Connect the LDR and Arduino as mentioned below 
+Connect the HCSRO4 and Arduino as mentioned below 
 
 |HCSR04 | Arduino Pin|
 |--------|------------|
@@ -179,7 +179,7 @@ We can't carry the computer always with our proect to see the distace right? so 
 ### 3.4 Connection Diagram 
 Connect the LDR and Arduino as mentioned below 
 
-|HCSR04 | Arduino Pin|
+|LCD | Arduino Pin|
 |--------|------------|
 |GND| Arduino GND|
 |VCC| Arduino 5v|
