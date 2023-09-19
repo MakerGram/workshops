@@ -219,17 +219,3 @@ Then enter the M1 button to Turn ON the LED and M2 to turn OFF the LED.
 ## Conclusion
 
 Congratulations 👏👏 , you made "Smart Light" project with Arduino. Kudos. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
