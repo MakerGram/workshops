@@ -56,7 +56,7 @@ Step 3. Add ESP32 board package to your Arduino IDE.
 
 Navigate to File > Preferences, and fill "Additional Boards Manager URLs" with the url below:
 
-```https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json``` 
+```https://espressif.github.io/arduino-esp32/package_esp32_index.json``` 
 
 ![](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/6.png)
 
