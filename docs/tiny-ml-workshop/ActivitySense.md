@@ -127,7 +127,7 @@ Upload the abobe code to your XIAO Sense and open the serial monitor or serial p
 
 ![](../tiny-ml-workshop/img/sense/bandInstalled.png)
 
-Install the band on your hand as mentioned on the above image and then move you hand after opeing the Serial montior or Serial plotter. 
+Install the band on your hand as mentioned on the above image and then move you hand after open the Serial monitor or Serial plotter. 
 
 ![](../tiny-ml-workshop/img/sense/raawIMUSerial.png)
 
