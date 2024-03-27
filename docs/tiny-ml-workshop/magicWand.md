@@ -719,8 +719,7 @@ void loop() {
 
 Here is part we are doing the action over HID whenever XIAO recognize the movement. After the code upload, open any slides and check move your magic wand to see the magic 🪄.
 
-
-![](../tiny-ml-workshop/img/magicwand/finalGif.gif)
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/A546SR1KuAE?si=NG4RV4zPw97BYLzN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Summary 🍀
