@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Activity Sense ✨ - Human Activity Monitor 
+# Activity Sense ✨ - Human Activity Monitor
 
 In today's sedentary lifestyle, individuals often struggle to maintain a balanced level of physical activity throughout their daily routines. Prolonged periods of sitting, lack of movement, and inadequate standing time can lead to various health issues, including obesity, cardiovascular problems, and musculoskeletal disorders. To address this concern and promote a healthier lifestyle, there is a pressing need for an efficient and accurate human activity monitoring system.
 
@@ -10,45 +10,45 @@ ActivitySense, a fascinating DIY human activity monitoring project that empowers
 
 1. **SeeedStudio XIAO nRF52840 Sense Controller**: The heart of this DIY project is the SeeedStudio XIAO nRF52840 Sense controller. This compact microcontroller comes equipped with powerful features such as Bluetooth 5.0 and multi-sensor data fusion. With the XIAO nRF52840 Sense at the core, you can collect real-time data from accelerometers and gyroscopes, making activity tracking accurate and reliable.
 
-2. **Edge Impulse Machine Learning Platform**: Take your DIY activity monitor to the next level by integrating it with the Edge Impulse machine learning platform. This fantastic tool allows you to train your device with datasets containing various activity Porpatterns. By doing so, your ActivitySense becomes adept at recognizing activities like sitting, walking, and standing, providing you with personalized insights based on your specific routines.
+2. **Edge Impulse Machine Learning Platform**: Take your DIY activity monitor to the next level by integrating it with the Edge Impulse machine learning platform. This fantastic tool allows you to train your device with datasets containing various activity patterns. By doing so, your ActivitySense becomes adept at recognizing activities like sitting, walking, and standing, providing you with personalized insights based on your specific routines.
 
-3. **Blueswirless Wifi Module**: To enable seamless data transfer and connectivity in your DIY project, the Blueswirless Wifi module comes to the rescue. With this module, your ActivitySense can effortlessly transmit monitored activity data to the cloud. By connecting it to your smartphone or other devices, you gain access to comprehensive activity reports and stay on top of your fitness goals.
+3. **Blueswireless Wifi Module**: To enable seamless data transfer and connectivity in your DIY project, the Blueswireless Wifi module comes to the rescue. With this module, your ActivitySense can effortlessly transmit monitored activity data to the cloud. By connecting it to your smartphone or other devices, you gain access to comprehensive activity reports and stay on top of your fitness goals.
 
 ### Key Features of  ActivitySense:
 
 * Real-time monitoring of sitting time, walking time, and standing time, offering immediate feedback on your daily activity levels.
 * Accurate activity recognition through the powerful combination of SeeedStudio XIAO nRF52840 Sense and Edge Impulse's machine learning algorithms.
-* Cloud connectivity using the Blueswirless Wifi module for easy access to activity data on-the-go.
+* Cloud connectivity using the Blues wireless Wifi module for easy access to activity data on-the-go.
 * User-friendly interface for DIY enthusiasts of all skill levels to build and configure their personalized activity tracker.
 
-## How it's works. 
+## How it's works.
 
 [Need to add a draw.io image here]
 
 # Let's build one 🛠️
 
-Follow the below guide to build the **Ativity Sense ✨ - Human Activity Monitor** Project. 
+Follow the below guide to build the **Activity Sense ✨ - Human Activity Monitor** Project.
 
 ### Hardware Requirements 🔩
 * Seeed XIAO nRF52840 Sense
-* Type-C Cable 
+* Type-C Cable
 * Laptop/Desktop computer
 * Blues Starter Kit with WiFi Card
 
 ### Software Installations 💻
 Attendees only need some very basic knowledge of Arduino development and understanding of 101-level C coding concepts. Some (free) software installations are required:
 
-* Arduino IDE 
+* Arduino IDE
 * Install the Edge Impulse CLI
 * Create a free Blues Notehub account
 * Create a free Edge Impulse Studio account
 * Create a free Datacake account
-* XIAO Hand Strap 
+* XIAO Hand Strap
 
 
-### Workshop Agenda  📖 
+### Workshop Agenda  📖
 
-All of the resources needed to present the workshop are available in the venue. Please let us know if anything missing. 
+All of the resources needed to present the workshop are available in the venue. Please let us know if anything missing.
 
 * Welcome and Introductions **[5 mins]**
 * Introduce the Seeed XIAO nRF52840 Hardware **[5 mins]**
@@ -61,17 +61,17 @@ All of the resources needed to present the workshop are available in the venue. 
 * Hands-on: Notecard + Notecarrier Standalone Quickstart **[20 mins]**
 * Hands-on: Visualizing Generated Inferences in Datacake **[20 mins]**
 
-## Step 1: Introductions 🔖 
+## Step 1: Introductions 🔖
 
-1. [Introduction to TinyML 💪 + 🧠](../../docs/tiny-ml-workshop/intro) 
-2. [Introduction to Arduino ♾️](../../docs/tiny-ml-workshop/introductionToArduino) => Install Arduino IDE 
-3. [Introduction to XIAO nRF52840 Sense 🍀](../../docs/tiny-ml-workshop/IntroductionToXiao) => Install XIAO on Arduino , run blink project. 
-4. [Introduction to EdgeImpulse 💪](../../docs/tiny-ml-workshop/IntroductionToEdgeImpulse) => Create Edge Impulse account. 
-5. [Introduction to Blueswirless 📡](../../docs/tiny-ml-workshop/IntroductionToBlues) => Create Blues wirless account. 
+1. [Introduction to TinyML 💪 + 🧠](../../docs/tiny-ml-workshop/intro)
+2. [Introduction to Arduino ♾️](../../docs/tiny-ml-workshop/introductionToArduino) => Install Arduino IDE
+3. [Introduction to XIAO nRF52840 Sense 🍀](../../docs/tiny-ml-workshop/IntroductionToXiao) => Install XIAO on Arduino , run blink project.
+4. [Introduction to Edge Impulse 💪](../../docs/tiny-ml-workshop/IntroductionToEdgeImpulse) => Create Edge Impulse account.
+5. [Introduction to Blues wireless 📡](../../docs/tiny-ml-workshop/IntroductionToBlues) => Create Blues wireless account.
 
 ## Step 2: Fetch Accelerometer data from XIAO 🧺
 
-Next, we need to read the Accelerometer data from the XIAO inbuilt Accelerometer senseor. For that please follow the below guide. 
+Next, we need to read the Accelerometer data from the XIAO inbuilt Accelerometer sensor. For that please follow the below guide.
 
 #### Step 2.1: Connect the Seeed Studio XIAO nRF52840 Sense to your computer via a USB Type-C cable.
 ![](https://files.seeedstudio.com/wiki/XIAO-BLE/bletpyecconnect.png)
@@ -79,7 +79,7 @@ Next, we need to read the Accelerometer data from the XIAO inbuilt Accelerometer
 #### Step 2.2: Upload ReadXIAOAccelerometer.ino sketch
 
 ```
-// XIAO BLE Sense LSM6DS3 Data  Forwarder 
+// XIAO BLE Sense LSM6DS3 Data  Forwarder
 
 #include "LSM6DS3.h"
 #include "Wire.h"
@@ -123,24 +123,24 @@ void loop() {
 
 Upload the abobe code to your XIAO Sense and open the serial monitor or serial ploter to see the accelerometer data.
 
-#### Step 2.3: Install the XIAO to the hand using the Strap provided. 
+#### Step 2.3: Install the XIAO to the hand using the Strap provided.
 
 ![](../tiny-ml-workshop/img/sense/bandInstalled.png)
 
-Install the band on your hand as mentioned on the above image and then move you hand after open the Serial monitor or Serial plotter. 
+Install the band on your hand as mentioned on the above image and then move you hand after open the Serial monitor or Serial plotter.
 
 ![](../tiny-ml-workshop/img/sense/raawIMUSerial.png)
 
-You can also see the data over the Serial Plotter. 
+You can also see the data over the Serial Plotter.
 
 ![](../tiny-ml-workshop/img/sense/raawIMUSerialplotter.png)
 
 
-## Step 3: Connect to Edge impulse and Forward Accelerometer data  🎛️. 
+## Step 3: Connect to Edge impulse and Forward Accelerometer data  🎛️.
 
-As of now, we can see the accelerometer data from from the XIAO using arduino IDE serial monitor, now we need to forward the data to the edge impulse for post processing. 
+As of now, we can see the accelerometer data from from the XIAO using arduino IDE serial monitor, now we need to forward the data to the edge impulse for post processing.
 
-### Step 3.1: Create an Edge Impulse project. 
+### Step 3.1: Create an Edge Impulse project.
 
 First, we need to create an edge impulse account. for that go to https://studio.edgeimpulse.com/login select **Sign Up**, or if you already have an account enter **Username/Email** and **password**.
 
@@ -148,11 +148,11 @@ First, we need to create an edge impulse account. for that go to https://studio.
 
 ### Step 3.2: Create Edge Impulse Project
 
-After creating an account, we need to create an edgeImpulse project. For that click your profile and select Create a new project or use this [URL](https://studio.edgeimpulse.com/studio/select-project#create-new-project). 
+After creating an account, we need to create an edgeImpulse project. For that click your profile and select Create a new project or use this [URL](https://studio.edgeimpulse.com/studio/select-project#create-new-project).
 
 ![](../tiny-ml-workshop/img/sense/newproject.png)
 
-Then provide a project name, then click **Create new project** . 
+Then provide a project name, then click **Create new project** .
 
 ![](https://hackster.imgix.net/uploads/attachments/1323155/image_MYIOqUbxwg.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
@@ -161,13 +161,13 @@ Next, you can see the studio page, which means you successfully created an edge 
 ![](https://hackster.imgix.net/uploads/attachments/1323156/image_JUOIG1bLjI.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
 
-## Step 4: Connect the XIAO with EdgeImpulse and start collect data 🪣. 
+## Step 4: Connect the XIAO with EdgeImpulse and start collect data 🪣.
 
-Next, we need to connect the XIAO with the edgeimpulse to collect the data, and for that you need follow the below steps. 
+Next, we need to connect the XIAO with the edge impulse to collect the data, and for that you need follow the below steps.
 
-### Steps 4.1: Install Edge impulse CLI in your computer. 
+### Steps 4.1: Install Edge impulse CLI in your computer.
 
-This Edge Impulse CLI is used to control local devices, act as a proxy to synchronise data for devices that don't have an internet connection, and to upload and convert local files. The CLI consists of seven tools:
+This Edge Impulse CLI is used to control local devices, act as a proxy to synchronies data for devices that don't have an internet connection, and to upload and convert local files. The CLI consists of seven tools:
 
 * [edge-impulse-daemon](https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-daemon) - configures devices over serial, and acts as a proxy for devices that do not have an IP connection.
 * [edge-impulse-uploader](https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-uploader) - allows uploading and signing local files.
@@ -217,36 +217,36 @@ echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.zprofile
 ``npm install -g edge-impulse-cli``
 You should now have the tools available in your PATH.
 
-For more details, check here https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-installation. 
+For more details, check here https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-installation.
 
-### Steps 4.2: Connect the XIAO to the Edgeimpulse project we created 
+### Steps 4.2: Connect the XIAO to the Edge Impulse project we created
 
-We need to connect the XIAO board to a specific project. For that, follow th steps after installig the edge impulse CLI 
+We need to connect the XIAO board to a specific project. For that, follow th steps after installing the edge impulse CLI
 
 Enter the command ``edge-impulse-data-forwarder`` CLI to start the data forwarder and provide the information. It's similar to below image
 
 ![](../tiny-ml-workshop/img/sense/cliconnnect.png)
- 1. Run command ``edge-impulse-data-forwarder`` 
- 2. Enter edge impulse account email account 
+ 1. Run command ``edge-impulse-data-forwarder``
+ 2. Enter edge impulse account email account
  3. Enter edge impulse account password
- 4. Select project from the list. 
+ 4. Select project from the list.
 
-After selecting the project, we need to describe the data as below. 
+After selecting the project, we need to describe the data as below.
 
 ![](../tiny-ml-workshop/img/sense/cliconnnect2.png)
- 1. Name the sensor values as ```accX,accY,accZ``` 
+ 1. Name the sensor values as ```accX,accY,accZ```
 
-That's all, then open the Edge impulse project page, you can seee the device connected there.
+That's all, then open the Edge impulse project page, you can see the device connected there.
 
-### Step 4.3 Start collecting Data. 
+### Step 4.3 Start collecting Data.
 
 ![](../tiny-ml-workshop/img/sense/conenctedDevice.png)
 
-After following the step 4.2, we can see the device connected to the edge impulse and we can see it's listed as above image. 
+After following the step 4.2, we can see the device connected to the edge impulse and we can see it's listed as above image.
 
 ![](../tiny-ml-workshop/img/sense/dataCollection.png)
 
-Choose **Data Aquisition** option and provide the **lable** of data we are collecting and click start **"Start Sampling"**, For this project we are collecting data for **Standing** , **Sitting** and **Walking** activites for simplicity. Try to collect as much data as possible. 
+Choose **Data Acquisition** option and provide the **label** of data we are collecting and click start **"Start Sampling"**, For this project we are collecting data for **Standing** , **Sitting** and **Walking** activities for simplicity. Try to collect as much data as possible.
 
  You can see that label is Jump so I need to record jump data from the sensor parameters.
 
@@ -258,16 +258,16 @@ Choose **Data Aquisition** option and provide the **lable** of data we are colle
 
  So when sampling started, you should do the activity for 10 seconds to capture the data.
 
- ![](https://hackster.imgix.net/uploads/attachments/1323171/ezgif_com-gif-maker_(1)_fULCHaDNg5.gif) 
+ ![](https://hackster.imgix.net/uploads/attachments/1323171/ezgif_com-gif-maker_(1)_fULCHaDNg5.gif)
 
 Another option is you can also import the pre-captured data. For that, first download the dataset by clicking [here](../tiny-ml-workshop/src/activitymonitor_xiao_sense-export.zip)
 
 
-#### Upload the dataset 
+#### Upload the dataset
 ![](../tiny-ml-workshop/img/sense/uploadData1.png)
-Select the **Upload data** option. 
+Select the **Upload data** option.
 ![](../tiny-ml-workshop/img/sense/uploadData2.png)
-Make sure to select the exact settings as mentiond on the above image and then choose the file that you alredy downloaded from  [here](../tiny-ml-workshop/src/activitymonitor_xiao_sense-export.zip). 
+Make sure to select the exact settings as mentiond on the above image and then choose the file that you alredy downloaded from  [here](../tiny-ml-workshop/src/activitymonitor_xiao_sense-export.zip).
 
 After collecting or importing the data, you can see the inspect the Raw data. Like this
 ![](../tiny-ml-workshop/img/sense/rawData1.png)
@@ -275,7 +275,7 @@ After collecting or importing the data, you can see the inspect the Raw data. Li
 ![](../tiny-ml-workshop/img/sense/rawData2.png)
 
 
-## Step 5 Design Impulse, create ML model and train 🪄. 
+## Step 5 Design Impulse, create ML model and train 🪄.
 
 An impulse takes the raw data, slices it up in smaller windows, uses signal processing blocks to extract features, and then uses a learning block to classify new data.
 
@@ -293,16 +293,16 @@ First, we need to select the parameters such as window size in the data series,p
 
 ![](../tiny-ml-workshop/img/sense/impulse_creation.png)
 
-1. **Time series data**: We need to mention the data we are using for the model, here we are using **accX**,**accY** and **accZ** values, and put **Window size** as **2000ms** , **Window increase** as **200ms**, then finally FREQ as 50 Hz. Pleas refer the image. 
+1. **Time series data**: We need to mention the data we are using for the model, here we are using **accX**,**accY** and **accZ** values, and put **Window size** as **2000ms** , **Window increase** as **200ms**, then finally FREQ as 50 Hz. Pleas refer the image.
     * The **window size** is the size of the raw features that is used for the training
     * The **window increase **is used to artificially create more features (and feed the learning block with more information)
     * The** frequency** is automatically calculated based on your training samples. You can modify this value but you currently cannot use values lower than 0.000016 (less than 1 sample every 60s).
     * **Zero-pad data**: Adds zero values when raw feature is missing
-2. **Processing Block => Spectral Analysis**: Extracting meaningful features from your data is crucial to building small and reliable machine learning models, and in Edge Impulse this is done through processing blocks. Here for the project we are using the **Spectral Analysis**. 
+2. **Processing Block => Spectral Analysis**: Extracting meaningful features from your data is crucial to building small and reliable machine learning models, and in Edge Impulse this is done through processing blocks. Here for the project we are using the **Spectral Analysis**.
 
-3. **Learning Block => Classfication**: After extracting meaningful features from the raw signal using signal processing, you can now train your model using a learning block. We are using **Classfication** Learning Block .
+3. **Learning Block => Classification**: After extracting meaningful features from the raw signal using signal processing, you can now train your model using a learning block. We are using **Classfication** Learning Block .
 
-4. **Output Features:** Here we can see the output from the Impulse, it's will be the product of the ML prediction. Here we can see the values as "**Sitting**" , "**Standing**", "**Walking**". 
+4. **Output Features:** Here we can see the output from the Impulse, it's will be the product of the ML prediction. Here we can see the values as "**Sitting**" , "**Standing**", "**Walking**".
 
 ### Step 5.2 Spectral features
 
@@ -317,39 +317,39 @@ Edge Impulse will slide the window over your sample, as given by the time series
 * **Cut-off frequency** - Cut-off frequency of the filter in hertz. Also, this will remove unwanted frequency bins from the generated features.
 * **Order** - Order of the Butterworth filter. Must be an even number. A higher order has a sharper cutoff at the expense of latency. You can also set to zero, in which case, the signal won't be filtered, but unwanted frequency bins will still be removed from the output.
 
-For now, we don't need chanage any paramters, Just click **Save paramters** and continue. 
+For now, we don't need change any parameters, Just click **Save parameters** and continue.
 
 
-### Step 5.3 Classifier 
+### Step 5.3 Classifier
 
-Here we are giving parameters to setup the out Neural Network. For this project, we don't need to chanage anaything and we can start trainig by clicking "**Start Training**" 
+Here we are giving parameters to setup the out Neural Network. For this project, we don't need to change anything and we can start training by clicking "**Start Training**"
 
 ![](../tiny-ml-workshop/img/sense/classifier.png)
 
-it will take few minutes from 5 to 10 minutes, please wait untill the training is completed. 
+it will take few minutes from 5 to 10 minutes, please wait until the training is completed.
 
 We can see the model training performance once training completed.
 
 ![](../tiny-ml-workshop/img/sense/model_perf.png)
 
 
-here we got a very good performance result, everything looks good so far 🥳. 
+here we got a very good performance result, everything looks good so far 🥳.
 
 
 ## Step 6: Generate Arduino Library 🧬.
-We successfully collected data and trained our tinyML model, now we can impliment it on our XIAO and make it action. To use the tinyML model, we can download tinyML project as arduino library, for that
+We successfully collected data and trained our tinyML model, now we can implement it on our XIAO and make it action. To use the tinyML model, we can download tinyML project as arduino library, for that
 
-1. Go to "**Deployment**" 
+1. Go to "**Deployment**"
 2. Serach for "**Arduino Library**"
 3. Click **Build**
 
 ![](../tiny-ml-workshop/img/sense/libgen1.png)
 
-The process will take little bit time, so please wait untill the library is generated. 
+The process will take little bit time, so please wait until the library is generated.
 
-## Step 7: Deploy it on the XIAO nRF52850 Sense and Live infernce 🪢.
+## Step 7: Deploy it on the XIAO nRF52850 Sense and Live inference 🪢.
 
-Once the library generated, we need to add it on the arduino as new library for that, choose **Add .ZIP Libry** from the **Include Library** option from **Sketch**. 
+Once the library generated, we need to add it on the arduino as new library for that, choose **Add .ZIP Libry** from the **Include Library** option from **Sketch**.
 
 ![](../tiny-ml-workshop/img/sense/lib_adding.png)
 
@@ -398,8 +398,8 @@ void setup()
 
 /**
  * @brief Return the sign of the number
- * 
- * @param number 
+ *
+ * @param number
  * @return int 1 if positive (or 0) -1 if negative
  */
 float ei_get_sign(float number) {
@@ -407,7 +407,7 @@ float ei_get_sign(float number) {
 }
 
 /**
-* @brief      Get data and run inferencing
+* @brief      Get data and run inference
 *
 * @param[in]  debug  Get debug info if true
 */
@@ -494,14 +494,14 @@ void loop()
 
 ```
 
-From the above code, replace the ``#include <ActivityMonitor_Xiao_Sense_inferencing.h>`` replace your library name here and upload to the XIAO. 
+From the above code, replace the ``#include <ActivityMonitor_Xiao_Sense_inferencing.h>`` replace your library name here and upload to the XIAO.
 
-Now you can see the your body action inferencing by the tinyML model running on the XIAO and display the prediction on the Serial monitor. 
+Now you can see the your body action inference by the tinyML model running on the XIAO and display the prediction on the Serial monitor.
 
 ![](../tiny-ml-workshop/img/sense/FinalOutput1.png)
 
 
-# Congratulation, you made the tinyML project and implimented it on the XIAO BLE Sense. 🥳
+# Congratulation, you made the tinyML project and implemented it on the XIAO BLE Sense. 🥳
 
 
 
@@ -515,14 +515,14 @@ Now you can see the your body action inferencing by the tinyML model running on 
 
 ## Summary 🍀
 
-* We learned about the Arduino, XIAO BLE Sense, Edge impulse and Blues wirless
+* We learned about the Arduino, XIAO BLE Sense, Edge impulse and Blues wireless
 * We created Edge impulse project and collected data and trained
-* We impliment our tinyML model on XIAO Ble sense. 
+* We implement our tinyML model on XIAO Ble sense.
 
 
-## I hop you enjoy the workshop Please share your feedback using the [google form ](https://forms.gle/N92ecn15v2y8MeAk6) . 
+## I hop you enjoy the workshop Please share your feedback using the [google form ](https://forms.gle/N92ecn15v2y8MeAk6) .
 
-### Thanks to our friends from Blueswirless, SeeedStudio , MakerGram, EdegeImpulse, Hackter.io to make the event happen, and thanks to our Fab23 team. 
+### Thanks to our friends from Blueswirless, SeeedStudio , MakerGram, Edege Impulse, Hackster.io to make the event happen, and thanks to our Fab23 team.
 
 
 ![](../tiny-ml-workshop/img/support_updates.png)
