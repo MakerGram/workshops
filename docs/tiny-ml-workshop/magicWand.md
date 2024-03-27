@@ -10,7 +10,7 @@ sidebar_position: 7
 
 In the enchanting world of Harry Potter, wands 🪄 are more than just tools; they are extensions of the wizards who wield them, capable of casting spells that bewitch minds, conjure beauty, and occasionally wreak havoc. What if the boundary between that magical realm and our own could be blurred? What if, with a flick of the wrist and a well-pronounced incantation, you could command the unseen forces of our world much like a wizard in Hogwarts? 🧙‍♀️ This isn't just a flight of fancy but a project that bridges the gap between the fantastical and the tangible through the marvels of modern technology.
 
-Enter the realm of magic with a twist of science as we embark on a journey to create a Harry Potter-style magic wand. This isn't any ordinary wand; it's powered by the cutting-edge **Seeed XIAO nRF52840 Sense** , a microcontroller that's small in size but vast in potential, combined with the intelligence of **Edge Impulse**, a leading platform in machine learning for edge devices. Together, they form the heart and soul of our wand, enabling it to recognize gestures and cast spells in a way that would make even the most skilled wizards pause in awe.
+Enter the realm of magic with a twist of science as we embark on a journey to create a Harry Potter-style magic wand. This isn't any ordinary wand; it's powered by the cutting-edge **Seeed XIAO nRF52840 Sense** , a micro controller that's small in size but vast in potential, combined with the intelligence of **Edge Impulse**, a leading platform in machine learning for edge devices. Together, they form the heart and soul of our wand, enabling it to recognize gestures and cast spells in a way that would make even the most skilled wizards pause in awe.
 
 ![](https://i.gifer.com/MjmG.gif)
 
@@ -95,7 +95,7 @@ Note : [Files](https://drive.google.com/drive/folders/1QLyKkKOwmpsVop3beFmxr5Dbu
 
 ## Step 2: Fetch Accelerometer data from XIAO 🧺
 
-Next, we need to read the Accelerometer data from the XIAO inbuilt Accelerometer senseor. For that please follow the below guide.
+Next, we need to read the Accelerometer data from the XIAO inbuilt Accelerometer sensor. For that please follow the below guide.
 
 ### Step 2.1: Connect the Seeed Studio XIAO nRF52840 Sense to your computer via a USB Type-C cable.
 ![](https://files.seeedstudio.com/wiki/XIAO-BLE/bletpyecconnect.png)
@@ -272,7 +272,7 @@ After following the step 4.2, we can see the device connected to the edge impuls
 
 ![](../tiny-ml-workshop/img/magicwand/dataCollection.jpeg)
 
-Choose **Data Aquisition** option and provide the **lable** of data we are collecting and click start **"Start Sampling"**, For this project we are collecting data for **idle** , **LeftRight** and **UpDown** activities for simplicity. Try to collect as much data as possible.
+Choose **Data Acquisition** option and provide the **label** of data we are collecting and click start **"Start Sampling"**, For this project we are collecting data for **idle** , **LeftRight** and **UpDown** activities for simplicity. Try to collect as much data as possible.
 
  You can see that label is 'LeftRight' so I need to record Left Right Movement data from the sensor parameters.
 
@@ -292,7 +292,7 @@ Choose **Data Aquisition** option and provide the **lable** of data we are colle
 ![](../tiny-ml-workshop/img/sense/uploadData1.png)
 Select the **Upload data** option.
 ![](../tiny-ml-workshop/img/sense/uploadData2.png)
-Make sure to select the exact settings as mentiond on the above image and then choose the file that you alredy downloaded from  [here](../tiny-ml-workshop/src/activitymonitor_xiao_sense-export.zip).
+Make sure to select the exact settings as mentioned on the above image and then choose the file that you already downloaded from  [here](../tiny-ml-workshop/src/activitymonitor_xiao_sense-export.zip).
 
 After collecting or importing the data, you can see the inspect the Raw data. Like this
 ![](../tiny-ml-workshop/img/magicwand/UpDownData.jpg)
@@ -326,7 +326,7 @@ First, we need to select the parameters such as window size in the data series,p
     * **Zero-pad data**: Adds zero values when raw feature is missing
 2. **Processing Block => Spectral Analysis**: Extracting meaningful features from your data is crucial to building small and reliable machine learning models, and in Edge Impulse this is done through processing blocks. Here for the project we are using the **Spectral Analysis**.
 
-3. **Learning Block => Classfication**: After extracting meaningful features from the raw signal using signal processing, you can now train your model using a learning block. We are using **Classfication** Learning Block .
+3. **Learning Block => Classification**: After extracting meaningful features from the raw signal using signal processing, you can now train your model using a learning block. We are using **Classification** Learning Block .
 
 4. **Output Features:** Here we can see the output from the Impulse, it's will be the product of the ML prediction. Here we can see the values as "**Sitting**" , "**Standing**", "**Walking**".
 
@@ -338,12 +338,12 @@ The Spectral features block extracts frequency, power and other characteristics 
 
 Edge Impulse will slide the window over your sample, as given by the time series input block parameters during Impulse creation in order to generate several training/test samples from your longer time series sample.
 * **Scale axes** - Multiply all raw input values by this number.
-* **Input decimation ratio** - Decimating (downsampling) the signal reduces the number of features and improves frequency resolution in relevant bands without increasing resource usage.
+* **Input decimation ratio** - Decimating (down sampling) the signal reduces the number of features and improves frequency resolution in relevant bands without increasing resource usage.
 * **Type** - The type of filter to apply to the raw data (low-pass, high-pass, or none).
 * **Cut-off frequency** - Cut-off frequency of the filter in hertz. Also, this will remove unwanted frequency bins from the generated features.
 * **Order** - Order of the Butterworth filter. Must be an even number. A higher order has a sharper cutoff at the expense of latency. You can also set to zero, in which case, the signal won't be filtered, but unwanted frequency bins will still be removed from the output.
 
-For now, we don't need chanage any paramters, Just click **Save paramters** and continue.
+For now, we don't need change any parameters, Just click **Save parameters** and continue.
 
 
 ### Step 5.3 Classifier
@@ -363,19 +363,19 @@ here we got a very good performance result, everything looks good so far 🥳.
 
 
 ## Step 6: Generate Arduino Library 🧬.
-We successfully collected data and trained our tinyML model, now we can impliment it on our XIAO and make it action. To use the tinyML model, we can download tinyML project as arduino library, for that
+We successfully collected data and trained our tinyML model, now we can implement it on our XIAO and make it action. To use the tinyML model, we can download tinyML project as arduino library, for that
 
 1. Go to "**Deployment**"
-2. Serach for "**Arduino Library**"
+2. Search for "**Arduino Library**"
 3. Click **Build**
 
 ![](../tiny-ml-workshop/img/sense/libgen1.png)
 
-The process will take little bit time, so please wait untill the library is generated.
+The process will take little bit time, so please wait until the library is generated.
 
-## Step 7: Deploy it on the XIAO nRF52850 Sense and Live infernce 🪢.
+## Step 7: Deploy it on the XIAO nRF52850 Sense and Live inference 🪢.
 
-Once the library generated, we need to add it on the arduino as new library for that, choose **Add .ZIP Libry** from the **Include Library** option from **Sketch**.
+Once the library generated, we need to add it on the arduino as new library for that, choose **Add .ZIP Library** from the **Include Library** option from **Sketch**.
 
 ![](../tiny-ml-workshop/img/sense/lib_adding.png)
 
