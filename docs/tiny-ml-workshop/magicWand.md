@@ -21,7 +21,7 @@ So grab your cloaks, prepare your potions, and let's dive into a project where t
 
 ## Key Features of Harry Potter Magic Wand 🧙‍♂️🪄
 
-* **Gesture Recognition** 🌀: Utilizes machine learning models trained via Edge Impulse to recognize specific wand movements, allowing the wielder to cast* spells by performing accurate gestures.
+* **Gesture Recognition** 🌀: Utilizes machine learning models trained via Edge Impulse to recognize specific wand movements, allowing the wielder to 'cast' spells by performing accurate gestures.
 * **Control Internet of things 📡**: With the modern Magic wand, we can control Internet of things devices and talk to system such as Laptop and Mobile phone.
 * **Bluetooth Capability 🛜** : Allows the wand to connect to smartphones, tablets, or other smart devices for extended functionalities, such as controlling smart home devices or playing sounds through external speakers.
 * **Open Source Software 💻**: Users can update the wand with new spells and gestures, thanks to the open-source nature of the software. The community can contribute to its spell library, making the wand's capabilities ever-expanding.
@@ -81,10 +81,10 @@ All of the resources needed to present the workshop are available in the venue. 
 
 ## Step 1: Introductions 🔖
 
-1. [Introduction to TinyML 💪 + 🧠](../../docs/tiny-ml-workshop/intro)
-2. [Introduction to Arduino ♾️](../../docs/tiny-ml-workshop/introductionToArduino) => Install Arduino IDE
-3. [Introduction to XIAO nRF52840 Sense 🍀](../../docs/tiny-ml-workshop/IntroductionToXiao) => Install XIAO on Arduino , run blink project.
-4. [Introduction to EdgeImpulse 💪](../../docs/tiny-ml-workshop/IntroductionToEdgeImpulse) => Create Edge Impulse account.
+1. [Introduction to TinyML 💪 + 🧠](https://workshop.makergram.com/docs/tiny-ml-workshop/intro)
+2. [Introduction to Arduino ♾️](https://workshop.makergram.com/docs/tiny-ml-workshop/IntroductionToArduino) => Install Arduino IDE
+3. [Introduction to XIAO nRF52840 Sense 🍀](https://workshop.makergram.com/docs/tiny-ml-workshop/IntroductionToXiao) => Install XIAO on Arduino , run blink project.
+4. [Introduction to EdgeImpulse 💪](https://workshop.makergram.com/docs/tiny-ml-workshop/IntroductionToEdgeImpulse) => Create Edge Impulse account.
 
 ---
 
@@ -200,7 +200,6 @@ This Edge Impulse CLI is used to control local devices, act as a proxy to synchr
 * [edge-impulse-data-forwarder](https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-data-forwarder) - a very easy way to collect data from any device over a serial connection, and forward the data to Edge Impulse.
 * [edge-impulse-run-impulse](https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-run-impulse) - show the impulse running on your device.
 * [edge-impulse-blocks](https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-blocks) - create organizational transformation, custom dsp, custom deployment and custom transfer learning blocks.
-* [himax-flash-tool](https://docs.edgeimpulse.com/docs/edge-impulse-cli/himax-flash-tool) - to flash the Himax WE-I Plus
 
 
 #### Installation - Windows
