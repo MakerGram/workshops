@@ -4,14 +4,14 @@ sidebar_position: 1
 
 # Introduction to tinyML 💪 + 🧠
 
-Welcome to tinyML Workshop, In here we will look into basic of tinyML and how to impliment an project using Edge impulse, SeeedStudio XIAO nRF52840 Sense and Blues wireless.
+Welcome to tinyML Workshop, In here we will look into basic of ML and tinyML. Feel do [PR](https://github.com/MakerGram/workshops) to improve the doc.
+
 
 ### What is Machine learning?
 
 Machine learning (ML) is a way of writing computer programs. Specifically, it’s a way of writing programs that process raw data and turn it into information that is meaningful at an application level.
 
-![](../../docs/tiny-ml-workshop/img/what-is-edge-machine-learning.webp) (📷src:edgeimpulse)
-
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRoNieVwXZl5x2H3k-8hAxuYs-X58Sbo5dSiXJhQxcF93FZ3hotvjPcECiZcbg-Vwgpc1rmOQjCwNC1/embed?start=false&loop=false&delayms=15000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 For example, one ML program might be designed to determine when an industrial machine has broken down based on readings from its various sensors, so that it can alert the operator. Another ML program might take raw audio data from a microphone and determine if a word has been spoken, so it can activate a smart home device.
 
@@ -33,9 +33,9 @@ Machine learning algorithms are powerful tools, but they can have the following 
 It can be tempting to try and apply ML everywhere—but if you can solve a problem without ML, it is usually better to do so.
 
 
-## What is embedded ML? 
+## What is embedded ML?
 
-![](../../docs/tiny-ml-workshop/img/tinyML01.webp) 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ6edxSKFZSjDa2FXCnnThKWLVfhkU8xe1FQV0UkIAHU5bE_sCvSfJ57JZj5qj5HsH8kxYRT9QCShg0/embed?start=false&loop=false&delayms=15000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 Recent advances in microprocessor architecture and algorithm design have made it possible to run sophisticated machine learning workloads on even the smallest of microcontrollers. Embedded machine learning, also known as TinyML, is the field of machine learning when applied to embedded systems such as these.
 
@@ -55,17 +55,15 @@ Src: docs.edgeimpulse.com
 ![](../../docs/tiny-ml-workshop/img/howitsworks.webp) (📷src:eonardocavagnis.medium.com)
 
 
-The machine learning model be created and training will be done with the help of powerful computer which can run the ML alogorthams to make the model training happen, After that model inferencing will be happening on the tinyML device of our choice. The above image give an better understanding. 
+The machine learning model be created and training will be done with the help of powerful computer which can run the ML alogorthams to make the model training happen, After that model inferencing will be happening on the tinyML device of our choice. The above image give an better understanding.
 
 In the following sessions, we will learn about every steps involved in tht tinyML model creation and running, Please stay tuned!
-
-TinyML Presenation: https://docs.google.com/presentation/d/1clxF8B306UgnjVS2aljbQabAG5CAUAdYL29QNriRk3w/edit?usp=sharing 
 
 # ToDo
 
  - [ ] Read the full documentation about "Introduction about tinyML"
- - [ ] Share an idea that you have in your mind where can use the tinyML to solve a problem. 
- 
+ - [ ] Share an idea that you have in your mind where can use the tinyML to solve a problem.
+
 
 
 
