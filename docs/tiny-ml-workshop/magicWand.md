@@ -728,6 +728,29 @@ Here is part we are doing the action over HID whenever XIAO recognize the moveme
 * We implemented our tinyML model on XIAO Ble sense.
 
 
-## I hop you enjoy the workshop Please share your feedback using the [google form ](https://forms.gle/N92ecn15v2y8MeAk6) .
+# ToDo - Followup After the Workshop
 
-### Thanks to our friends from  SeeedStudio for the support 🤗.
+1. ## Fill the [Feedback Form ](https://forms.gle/N92ecn15v2y8MeAk6).
+
+2. ## Join the Maker Newsletter by SeeedStudio.
+
+![QR Image](./img/magicwand/SeeedQR.jpg)
+
+3. ## Participate in this Vision Challenge and Win FREE Hardware worth!
+
+Tell us what you’d like to create or the real-world problems you aim to tackle using the Grove Vision AI V2 Sensor. We’ll review all submissions and select the 250 most innovative ideas. Chosen participants will receive a complimentary Grove Vision AI Module v2 and a compatible OV5647 camera module to bring their concepts to life. [More information](https://www.seeedstudio.com/blog/2024/03/13/exploring-smart-eyes-on-mcu-join-the-tinyml-vision-challenge-now/)
+
+![Vision Challenge](./img/magicwand/SeeedVisionChallange.jpeg)
+
+### Submit your ideas
+Tell us what you’d like to create or the real-world problems you aim to tackle using the Grove Vision AI V2 Sensor. We’ll review all submissions and select the 250 most innovative ideas. Chosen participants will receive a complimentary Grove Vision AI Module v2 and a compatible OV5647 camera module to bring their concepts to life.
+
+Seize this unique opportunity by submitting your ideas now—availability is on a first-come, first-serve basis.
+
+After you submit your idea, we will review it, and if your idea is selected, we will contact you via the email address you provided and ship you the products. Should you have any question, please feel free to reach out to iot@seeed.cc, and we will be there to support you.
+
+👉 [Submit your ideas here](https://docs.google.com/forms/d/e/1FAIpQLSff4smpmUu2dTNiWMI4yjbaKyZUcDVHfVrJWQMxmxwwYSqwuw/viewform)
+
+##
+
+### Finally, Thanks to our friends from SeeedStudio for the support 🤗.
